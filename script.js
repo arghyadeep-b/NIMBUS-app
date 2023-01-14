@@ -32,8 +32,11 @@ const getWeather = (city) => {
 getWeather("Kolkata")
 // cityName.innerHTML = city;
 // document.querySelector
-//! Needs to be fixed
-document.quarrySelector('#submit').addEventListenter("click", function (e) {
-    e.preventDefault();//? This is not working somehow;
-    getWeather(city.value);
-})
+
+//# Submit button 
+const btnSubmit = document.querySelector('.btn-submit');
+
+btnSubmit.addEventListener("click", function (event) {
+    event.preventDefault();
+    getWeather(`${city.value}`);
+});
