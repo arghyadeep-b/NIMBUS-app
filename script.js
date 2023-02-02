@@ -43,3 +43,5 @@ btnSubmit.addEventListener("click", function (event) {
     event.preventDefault();
     getWeather(`${city.value}`);
 });
+
+//? Weather of other places
