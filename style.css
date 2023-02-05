@@ -1,0 +1,71 @@
+html{
+    /* font-size: 0%; */
+    box-sizing: border-box;
+}
+.navbar{
+    
+    color: white;
+}
+.navbar-brand{
+    font-family: '',cursive;
+    font-weight: bold;
+    background: linear-gradient(90deg,#00dbde, #fc00ff);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading-1{
+    background: linear-gradient(to right,black 0%, #166D3B 100%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2{
+    background-color: white;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body{
+    /* background: linear-gradient(90deg,#00dbde, #fc00ff); */
+    background: radial-gradient(circle at 0.8% 1.8%, #09C6F9 0%, #045DE9 90.1%);
+    
+}
+
+.col{
+    padding: 12px;
+    width: 50%;
+    /* height:50%; */
+    align-items: center;
+}
+
+/* TAble */
+.table{
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: cursive;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 15px #045DE9;
+}
+thead{
+    background: radial-gradient(circle at 6.4% 9.8%, rgb(88, 242, 174) 0%, rgb(0, 130, 240) 97.9%);
+    color: white;
+    font-weight: bold;
+}
+
+.table th,
+.table td{
+    padding: 12px 15px;
+}
+
+
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid radial-gradient(circle at 0.8% 1.8%, #09C6F9 0%, #045DE9 90.1%);
+}
+
+.table tbody th{
+    color: #045DE9;
+}
+
+.table tbody td{
+    color: rgb(71, 181, 71);
+}

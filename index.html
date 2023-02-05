@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
     <title>My Weather App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
+
+
+  
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Weather app</a>
+          <a class="navbar-brand" href="#" >MAUSAM</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,10 +48,10 @@
         </div>
       </nav>
       <div class="container">
-        <h1 class="my-4 text-centre">Weather of <span id="cityName"></span></h1>
+        <h1 class="my-4 text-centre heading-1">Weather of <span id="cityName"></span></h1>
         <main>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-              <div class="col">
+              <div class="col col--temp">
                 <div class="card mb-4 rounded-3 shadow-sm">
                   <div class="card-header py-3">
                     <h4 class="my-0 fw-normal">Temperature</h4>
@@ -66,7 +70,7 @@
 
 
               
-              <div class="col">
+              <div class="col col--wind">
                 <div class="card mb-4 rounded-3 shadow-sm">
                   <div class="card-header py-3">
                     <h4 class="my-0 fw-normal">Wind Info</h4>
@@ -74,8 +78,9 @@
                   <div class="card-body">
                     <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small class="text-muted fw-light"> km/hr</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
+                      <br>
                       <li>Wind speed is <span id="wind_speed"></span></li>
-                        <li>Wind dergees is <span id="wind_degrees"></span></li>
+                      <li>Wind dergees is <span id="wind_degrees"></span></li>
                       
                       
                     </ul>
@@ -84,7 +89,7 @@
               </div>
 
 
-              <div class="col">
+              <div class="col col--humi">
                 <div class="card mb-4 rounded-3 shadow-sm ">
                   <div class="card-header py-3">
                     <h4 class="my-0 fw-normal">Humidity Info</h4>
@@ -106,10 +111,10 @@
         
             <h2 class="display-6 text-center mb-4">Weather of other places</h2>
         
-            <div class="table-responsive container">
-              <table class="table text-center">
-                <thead class="table-light">
-                  <tr>
+            <div class="table-responsive container ">
+              <table class="table text-center"  bgcolor="white">
+                <thead align="center">
+                  <tr  align="center">
                     <th style="width: 34%;"></th>
                     
                     <th style="width: 22%;">Temp<th>
@@ -123,8 +128,8 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row" class="text-start">Shanghai</th>
+                  <tr align="center">
+                    <th scope="row" class="text-start table--rows">Shanghai</th>
                     
                     
                     <td colspan="2"><span id="Shanghai_temp"></span></td>
@@ -138,7 +143,7 @@
                     
                   </tr>
                   <tr>
-                    <th scope="row" class="text-start">Berlin</th>
+                    <th scope="row" class="text-start table--rows">Berlin</th>
                     
                     <td colspan="2"><span id="Berlin_temp"></span></td>
                     <td colspan="2"><span id="Berlin_max_temp"></span></td>
@@ -153,7 +158,7 @@
         
                 <!-- <tbody> -->
                   <tr>
-                    <th scope="row" class="text-start">Bangalore</th>
+                    <th scope="row" class="text-start table--rows">Bangalore</th>
                     
                     <td colspan="2"><span id="Bangalore_temp"></span></td>
                     <td colspan="2"><span id="Bangalore_max_temp"></span></td>
@@ -165,7 +170,7 @@
                     <td colspan="2"><span id="Bangalore_sunset"></span></td>
                   </tr>
                   <tr>
-                    <th scope="row" class="text-start">Delhi</th>
+                    <th scope="row" class="text-start table--rows">Delhi</th>
                     
                     <td colspan="2"><span id="Delhi_temp"></span></td>
                     <td colspan="2"><span id="Delhi_max_temp"></span></td>
