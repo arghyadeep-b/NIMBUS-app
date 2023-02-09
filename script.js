@@ -1,3 +1,5 @@
+'use strict'
+
 const options = {
     method: 'GET',
     headers: {
@@ -127,3 +129,4 @@ const Delhi = {
         })
 
 }
+

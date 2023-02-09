@@ -2,23 +2,65 @@ html{
     /* font-size: 0%; */
     box-sizing: border-box;
 }
-.navbar{
+.logo{
+  height: 25px;
+  width: 25px;
+}
+
+/* .navbar{
     
     color: white;
-}
+} */
 .navbar-brand{
-    font-family: '',cursive;
+  
+    font-family: cursive;
     font-weight: bold;
-    background: linear-gradient(90deg,#00dbde, #fc00ff);
+    background: radial-gradient(circle at 6.4% 9.8%, rgb(0, 130, 240) 0%, rgb(83, 221, 228) 97.9%);
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.heading-1{
-    background: linear-gradient(to right,black 0%, #166D3B 100%);
+/* Dropdown about */
+.dropdown-about{
+  width: 500px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+  transition: opacity 150ms ease-in-out
+}
+
+
+/* Modal about */
+.modal-about{
+  padding: 0%;
+  position: relative;
+  background-color: inherit;
+  border: 0px;
+  width: 120px;
+  color: gray;
+  font-family: cursive;
+  font-weight: bold;
+}
+.modal-about:hover{
+    background: radial-gradient(circle at 6.4% 9.8%, rgb(0, 130, 240) 0%, rgb(83, 221, 228) 97.9%);
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.modal{
+  font-family: cursive;
+}
+
+
+
+/*  */
+.heading-1{
+  
+    background: linear-gradient(to right,#5F0A87 0%, #A4508B 100%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    padding-bottom: 10px;
+    margin: 20px;
+}
+
 h2{
     background-color: white;
     -webkit-background-clip: text;
